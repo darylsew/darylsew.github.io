@@ -1,70 +1,36 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Cafe Daydream</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Cafe Daydream</h1>
-      <h2 class="project-tagline"></h2>
-    </section>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src ="jquery-3.2.1.min.js"></script>
+	<script src ="sparkles.js"></script>
+	
+	<title>An escapist's delight</title>
+</head>
+<body>
+	<div id = "navi">
+			<img class = "tile" src = "img/para_tile.png" data-target = "para_info">
+			<img class = "tile" src = "img/koi_tile.png" data-target = "koi_info">
+			<img class = "tile" src = "img/cd_tile.png" data-target = "about">
+	</div>
 
-    <section class="main-content">
-      <h1>
-<a id="welcome" class="anchor" href="#welcome" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome</h1>
+	<div class = "info" id = "para_info"> 
+		<h2>para</h2>
+		We are currently working on bringing Para to release with networking and re-released features. Sign up for our mailing list <a href = "http://cafedaydream.us13.list-manage.com/subscribe?u=69163987b43a0dcfba20e200e&id=cc2c91bed0">here</a>.
+		<br><br>
+		<center><div class = "close">close</div></center>
+	</div>
 
-      <p>We're currently working on polishing Para, a game in which a paper airplane has escaped from its cold, claustrophobic office prison and aims to explore the open world. Interested in the little plane’s adventure, you accompany it, using your wind powers to guide it through the unfamiliar and sometimes hostile environment. Sign up for our mailing list <a href="http://eepurl.com/b2_p3n">here</a> so we can let you know when we're releasing! We will support iOS, Android, Windows, Mac, and Linux.
+	<div class = "info" id = "koi_info"> 
+		<h2>waterlilies</h2>
+		<br><br>
+		<center><div class = "close">close</div></center>
+	</div>
 
-<h1><a id="waterlilies" class="anchor" href="#waterlilies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Waterlilies</h1>
-Last winter we released Waterlilies, a beautifully designed timed puzzle game for iPhone and iPad. See below for more information.</p>
-
-<p><a href="https://itunes.apple.com/us/app/waterlilies/id1074106680?mt=8"><img src="https://devimages.apple.com.edgekey.net/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="App Store Download Link"></a></p>
-
-<h1>
-<a id="faq" class="anchor" href="#faq" aria-hidden="true"><span class="octicon octicon-link"></span></a>FAQ</h1>
-
-<p>If you've come here for support because you're confused about how to play, we hope you'll find your question among the following. If you don't, shoot us an email at <a href="mailto:barista@cafedaydream.com">barista@cafedaydream.com</a> with the subject "Waterlilies Support" describing the issue and we'll help you out.</p>
-
-<h2>
-<a id="what-are-the-orange-lily-pads-for" class="anchor" href="#what-are-the-orange-lily-pads-for" aria-hidden="true"><span class="octicon octicon-link"></span></a>What are the orange lily pads for?</h2>
-
-<p>The orange lily pads must be traced through twice in order to make them disappear. The more there are, the more difficult a level is, as it's tough to visualize paths through them.</p>
-
-<h2>
-<a id="i-have-feedback-or-a-feature-suggestion-what-should-i-do" class="anchor" href="#i-have-feedback-or-a-feature-suggestion-what-should-i-do" aria-hidden="true"><span class="octicon octicon-link"></span></a>I have feedback or a feature suggestion. What should I do?</h2>
-
-<p>You should email <a href="mailto:barista@cafedaydream.com">barista@cafedaydream.com</a> with the subject "Waterlilies Suggestion" and we'll let you know if we can incorporate your feedback. Alternatively, feel free to write us a review, we'll definitely read it.</p>
-
-<h2>
-<a id="i-found-a-bug-what-should-i-do" class="anchor" href="#i-found-a-bug-what-should-i-do" aria-hidden="true"><span class="octicon octicon-link"></span></a>I found a bug! What should I do?</h2>
-
-<p>We try our best but everyone makes mistakes - we'd appreciate it if you could email <a href="mailto:barista@cafedaydream.com">barista@cafedaydream.com</a> with the subject "Bug Report" and describe the circumstances surrounding the bug.</p>
-
-<h2>
-<a id="whats-the-circle-in-the-upper-right-for" class="anchor" href="#whats-the-circle-in-the-upper-right-for" aria-hidden="true"><span class="octicon octicon-link"></span></a>What's the circle in the upper right for?</h2>
-
-<p>The circle is a timer which indicates how much time you have left to complete the level. The amount of time you have depends on the number of lily pads in the level.</p>
-
-<h2>
-<a id="how-did-you-make-the-levels-how-do-you-know-theres-always-a-solution" class="anchor" href="#how-did-you-make-the-levels-how-do-you-know-theres-always-a-solution" aria-hidden="true"><span class="octicon octicon-link"></span></a>How did you make the levels? How do you know there's always a solution?</h2>
-
-<p>The levels are randomly generated such that there is always a solution. Later levels are made more difficult by increasing the lily pad density, the frequency of orange lily pads, and decreasing the time allowed.</p>
-
-<p><img src="https://raw.githubusercontent.com/darylsew/darylsew.github.io/master/ss.jpg" alt="Screenshot of Waterlilies gameplay"></p>
-
-      <footer class="site-footer">
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
-  </body>
+	<div class = "info" id = "about"> 
+		<h2>about</h2>
+		<br><br>
+		<center><div class = "close">close</div></center>
+	</div>
+</body>
 </html>
