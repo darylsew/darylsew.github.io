@@ -25,11 +25,11 @@ $(document).ready(function() {
 			const target = $(this);
 			$(this).parent().children().each(function(e) {
 				if (!target.is($(this))) {
-					$(this).animate({"opacity": "0.4"}, 400);
+					$(this).animate({"opacity": "0.4"}, 00);
 				}
 			});
 		}, function() {
-			$(this).parent().children().animate({"opacity": "1.0"}, 400);
+			$(this).parent().children().animate({"opacity": "1.0"}, 00);
 		});
 
 
