@@ -40,6 +40,12 @@ body {
 	font-variant: small-caps;
 }
 
+.info > img {
+	margin: auto;
+	display: block;
+	max-width: 80%;
+}
+
 h2 {
 	color: #493995;
 	font-variant: small-caps;
