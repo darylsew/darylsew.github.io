@@ -47,6 +47,26 @@ body {
 	max-width: 80%;
 }
 
+table {
+	/* I have no idea why table doesn't inherit from body */
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10pt;
+	color: #272727;
+	padding: 5% 0;
+	table-layout: fixed;
+}
+
+th {
+	color: #493995;
+	font-variant: small-caps;
+}
+
+td, th {
+	padding: 1% 4%;		/* horizontal padding */
+	width: 50%;
+	vertical-align: top;
+}
+
 h2 {
 	color: #493995;
 	font-variant: small-caps;
