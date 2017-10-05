@@ -1,4 +1,16 @@
 $(document).ready(function() {
+	/* Load a specific page */
+	if (window.location.hash) {
+		var dataDivs = document.querySelectorAll('*[id]:not([id="navi"]');
+ 		var targetId = window.location.hash.substring(1);
+ 		for (var item of dataDivs) {
+ 			if (targetId === item.id) {
+ 				$("#navi").animate({ "top": "5%" }, "slow");
+				$("#" + targetId).slideToggle("slow");
+ 			}
+ 		}
+	}
+
 	$(function() {
 		$(".tile").click(function() {
 			const targetId = $(this).attr("data-target");		// a self-defined attribute 
@@ -16,7 +28,7 @@ $(document).ready(function() {
 				$("#navi").animate({ "top": "20%" }, "slow");
 			}
 			$("#" + targetId).slideToggle("slow");
-
+			// window.location.hash = targetId;
 		});
 	});
 
