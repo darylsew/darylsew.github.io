@@ -41,7 +41,7 @@ body {
 	font-variant: small-caps;
 }
 
-.info > img {
+.info img {
 	margin: auto;
 	display: block;
 	max-width: 80%;

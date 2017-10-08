@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>DIY Green House</title>
+		
+		<script type="text/javascript" src="phaser.min.js"></script>
+		<script type="text/javascript" src="src/boot.js"></script>
+		<script type="text/javascript" src="src/preload.js"></script>
+		<script type="text/javascript" src="src/level.js"></script>
+
+		<style>
+			body{
+				margin:0;
+			}
+			canvas {
+		        image-rendering:optimizeSpeed;             /* Legal fallback */
+		        image-rendering:-moz-crisp-edges;          /* Firefox        */
+		        image-rendering:-o-crisp-edges;            /* Opera          */
+		        image-rendering:-webkit-optimize-contrast; /* Safari         */
+		        image-rendering:optimize-contrast;         /* CSS3 Proposed  */
+		        image-rendering:crisp-edges;               /* CSS4 Proposed  */
+		        image-rendering:pixelated;                 /* CSS4 Proposed  */
+		        -ms-interpolation-mode:nearest-neighbor;   /* IE8+    */
+		        image-rendering:pixelated;
+		    }
+		</style>
+
+		<script>
+			var game = new Phaser.Game(640, 480, Phaser.CANVAS, "game");
+			game.state.add("Boot",boot);
+			game.state.add("Preload",preload);
+			game.state.add("Level", level);
+			game.state.start("Boot"); 
+
+			window.addEventListener("keydown", function(e) {
+				// prevent space key for Google Chrome
+		    if([8, 32].indexOf(e.keyCode) > -1) {
+		        e.preventDefault();
+		    	}
+			}, false);
+		</script>
+    </head>
+    <body>
+    </body>
+</html>

@@ -28,7 +28,7 @@ $(document).ready(function() {
 				$("#navi").animate({ "top": "20%" }, "slow");
 			}
 			$("#" + targetId).slideToggle("slow");
-			// window.location.hash = targetId;
+			window.location.hash = targetId;
 		});
 	});
 
