@@ -4,6 +4,13 @@ body {
 	color: #272727;
 }
 
+ i {
+    font-family: Georgia;
+    /* font-size: 10px; */
+    font-weight: lighter;
+    color: #cad1d7;
+ }
+
 .info {
 	position: absolute;
 	display: none;
