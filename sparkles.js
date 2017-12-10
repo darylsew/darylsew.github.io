@@ -56,3 +56,19 @@ $(document).ready(function() {
 	});
 
 });
+
+var loadDiyGame = function() { 
+  var game = document.createElement('div');
+  if (/Mobi/.test(navigator.userAgent)) {
+    // mobile page don't load the desktop only game
+    var note = document.createTextNode('Sorry, this app is only currently available on desktop!'); 
+    document.getElementById('diy-game').appendChild(note);
+  } else {
+    var game = document.createElement('iframe'); 
+    game.setAttribute('src', 'DIY/index.html');
+    game.setAttribute('height', '480');
+    game.setAttribute('width', '640');
+    game.style='border: none;';
+    document.getElementById('diy-game').appendChild(game); 
+  }
+}
